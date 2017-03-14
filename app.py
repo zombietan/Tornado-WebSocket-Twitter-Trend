@@ -119,7 +119,9 @@ def send_trend():
     TrendSocketHandler.cache_to50 = trend_array[25:]
     json_str = json.dumps(trend_array)
     TrendSocketHandler.send_updates(json_str)
-    threading.Timer(180, send_trend).start()
+    t = threading.Timer(180, send_trend)
+    t.daemon = True
+    t.start()
 
 
 def main():
