@@ -1,4 +1,4 @@
-window.onload = function() {
+(function() {
 
   "use strict";
 
@@ -70,4 +70,4 @@ window.onload = function() {
     };
   }
 
-};
+})();
