@@ -8,7 +8,7 @@ a {
 
 .magictime {
     animation-duration: 1s;
-    animation-fill-mode: both;
+    animation-fill-mode: none;
 }
 
 .vanishIn {

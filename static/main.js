@@ -48,9 +48,9 @@
         let data = this.trendArray[this.count];
         let tr = makeTable(data);
         if(this.count < 25) {
-          tr.appendTo('#left').addClass('magictime swashIn');
+          tr.appendTo('#left').addClass('magictime boingInUp');
         } else {
-          tr.appendTo('#right').addClass('magictime swashIn');
+          tr.appendTo('#right').addClass('magictime boingInUp');
         }
         this.count++;
         if(this.count == this.trendArray.length) {
